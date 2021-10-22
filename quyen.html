@@ -1,75 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>btvn4</title>
-    <style>
-      body{
-          margin: 0;
-          padding: 0;
-      }
-      header{
-          background-color: rgba(40, 40, 54, 0.938);
-          color: rgb(240, 245, 245);
-          height: 5vh;
-      }
-      footer{
-        background-color: rgba(40, 40, 54, 0.938);
-        height: 10vh;
-      }
-      .main{
-          height: 85vh;
-          display: flex;
-      }
-      .left{
-          width: 30%;
-          height: 100%;
-          box-sizing: border-box;
-      }
-      .right{
-          background-color: rgb(188, 243, 243);
-          height: 100%;
-          width: 70%;
-      }
-    .bia{
-        height: 30%;
-    }
-    </style>
+    <title>Document</title>
 </head>
-
-<body>
-    <header>
-       <span style="vertical-align: middle;">Nền tảng</span>
-    </header>
-    <div class="main">
-        <div class="left">
-            <h3>NeTa Shop</h3>
-            <table border="1" cellspacing="0" cellpadding="10">
-                <tr>
-                    <td><a href="">C1</a></td>
-                </tr>
-                <tr>
-                    <td><a href="">C2</a></td>
-                </tr>
-            </table>
-        </header>
-        </div>
-        <div class="right">
-             <div class="bia">
-                 <img style="width: 100%; height: 100%;" src="https://www.facebook.com/messenger_media?thread_id=100037829703643&attachment_id=230623805722945&message_id=mid.%24cAAAABCAeb4iC107FE18pgmaru_X1" alt="">
-             </div>
-             
-        </div>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background:#0b1522;
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .heart{
+        cursor: pointer;
+        margin: 100px;
+        height: 70px;
+        width: 70px;
+        background: #f20044;
+        position: relative;
+        transform: rotate(-45deg);
         
-    </div>
-    <footer>
+    
+        border-radius: 50px;
+        box-shadow: -10px 10px 90px #f20044;
+        animation: heart 0.6s linear infinite;
 
-    </footer>
-   
+    }
+    @keyframes heart{
+    0%{
+        transform:rorate(-45deg) scale(1.07)
+    
+    }
+    80%{
+        transform:rorate(-45deg) scale(1)
+    }
+    100%{
+        transform:rorate(-45deg) scale(0.7)
+    }}
+    .heart:before{
+        content: "";
+        position:absolute;
+        height: 70px;
+        width: 70px;
+        background: #f20044;
+        top: -50%;
+         
+         border-radius: 50px;
+        box-shadow: -10px -10px 90px #f20044;
+    }
+    .heart::after{
+        content: "";
+        position:absolute;
+        height: 70px;
+        width: 70px;
+        background: #f20044;
+        right:  -50%;
+     
+         border-radius: 50px;
+        box-shadow: 10px 10px 90px #f20044;
+    }
+</style>
+<body>
+       <!-- <script src="main.js"></script>  -->
+   <div class="heart"></div>
+
 </body>
-
 </html>

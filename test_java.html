@@ -15,52 +15,49 @@
         align-items: center;
         min-height: 100vh;
     }
-    .heart{
+    .heart{ 
         cursor: pointer;
         margin: 100px;
+        /* border-bottom: 50px; */
         height: 70px;
         width: 70px;
         background: #f20044;
         position: relative;
         transform: rotate(-45deg);
-        
-    
-        border-radius: 50px;
         box-shadow: -10px 10px 90px #f20044;
-        animation: heart 0.6s linear infinite;
-
+        align-items: heart 0.6s linear infinite;
+        
     }
     @keyframes heart{
-    0%{
-        transform:rorate(-45deg) scale(1.07)
+        0%{
+        transform: rorate(-45deg) scale(1.07)
     
     }
     80%{
-        transform:rorate(-45deg) scale(1)
+        transform: rorate(-45deg) scale(1.0);
     }
     100%{
-        transform:rorate(-45deg) scale(0.7)
-    }}
-    .heart:before{
+        transform: rorate(-45deg) scale(0.7);
+    }
+    }
+    .heart::before{
         content: "";
-        position:absolute;
-        height: 70px;
+        position: absolute;
         width: 70px;
+        height: 70px;
         background: #f20044;
-        top: -50%;
-         
-         border-radius: 50px;
-        box-shadow: -10px -10px 90px #f20044;
+        top: -50px;
+        border-radius: 50px;
+        box-shadow: 10px 10px 90px #f20044;
     }
     .heart::after{
         content: "";
-        position:absolute;
-        height: 70px;
+        position: absolute;
         width: 70px;
+        height: 70px;
         background: #f20044;
-        right:  -50%;
-     
-         border-radius: 50px;
+        right: -50px;
+        border-radius: 50px;
         box-shadow: 10px 10px 90px #f20044;
     }
 </style>
