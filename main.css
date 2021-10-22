@@ -1,0 +1,22 @@
+h1{
+    color: blue;
+    font-size: 10px;
+    width: 1000px;
+}
+#box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(98, 0, 255);
+}
+#first {
+    color: red;
+}
+*.clas{
+    color: salmon;
+    font-size: 30px;
+}
+:root{
+    --text-color: violet;
+
+
+}
