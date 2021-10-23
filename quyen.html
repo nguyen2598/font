@@ -1,72 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>btvn4</title>
+    <style>
+      body{
+          margin: 0;
+          padding: 0;
+      }
+      header{
+          background-color: rgba(40, 40, 54, 0.938);
+          color: rgb(240, 245, 245);
+          height: 5vh;
+          width: 100%;
+      }
+      .main{
+          height: 85vh;
+          width: 100%;
+          display: flex;
+      }
+      footer{
+        background-color: rgba(40, 40, 54, 0.938);
+        width: 100%;
+        height: 10vh;
+      }
+    .td1, .td2, .td3, .tr1, .tr2, .tr3, .table1{
+            border-collapse: collapse;
+            border: 1px solid rgb(145, 159, 161);
+            
+        }
+    .sp, .t1, .t2, .t3, .anhsp, .gia, .sao{
+        border-collapse: collapse;
+        border: 1px solid rgb(194, 209, 211);
+    }
+    .anhsp{
+        background-color: rgb(231, 39, 183);
+    }
+
+    </style>
 </head>
-<style>
-    body{
-        margin: 0;
-        padding: 0;
-        background:#0b1522;
-        display: flex;
-        align-items: center;
-        min-height: 100vh;
-    }
-    .heart{
-        cursor: pointer;
-        margin: 100px;
-        height: 70px;
-        width: 70px;
-        background: #f20044;
-        position: relative;
-        transform: rotate(-45deg);
-        
-    
-        border-radius: 50px;
-        box-shadow: -10px 10px 90px #f20044;
-        animation: heart 0.6s linear infinite;
 
-    }
-    @keyframes heart{
-    0%{
-        transform:rorate(-45deg) scale(1.07)
-    
-    }
-    80%{
-        transform:rorate(-45deg) scale(1)
-    }
-    100%{
-        transform:rorate(-45deg) scale(0.7)
-    }}
-    .heart:before{
-        content: "";
-        position:absolute;
-        height: 70px;
-        width: 70px;
-        background: #f20044;
-        top: -50%;
-         
-         border-radius: 50px;
-        box-shadow: -10px -10px 90px #f20044;
-    }
-    .heart::after{
-        content: "";
-        position:absolute;
-        height: 70px;
-        width: 70px;
-        background: #f20044;
-        right:  -50%;
-     
-         border-radius: 50px;
-        box-shadow: 10px 10px 90px #f20044;
-    }
-</style>
 <body>
-       <!-- <script src="main.js"></script>  -->
-   <div class="heart"></div>
+    <script src="main.js"></script>
+    <header>
+        <table style="width: 100%; height: 100%;">
+            <tr>
+                <td>
+                    <span class="span1">Nền tảng</span>
+                </td>
+                <td>
+                    <span class="span2" style="float: right;">
+                        <a style="text-decoration: none; color:#f2f2f2;" href="">Trang chủ</a>
+                        &nbsp;
+                        <a style="text-decoration: none; color:#f2f2f2;" href="">Giới thiệu</a>
+                        &nbsp;
+                        <a style="text-decoration: none; color: #f2f2f2;" href="">Dịch vụ</a>
+                        &nbsp;
+                        <a style="text-decoration: none; color: #f2f2f2;" href="">Liên hệ</a>
+                 </span>
 
+                </td>
+            </tr>
+        </table>
+      
+    </header>
+    <div class="main">
+        <table style="width: 100%; height: 100%;">
+           <tr>
+               <td style="width: 25%; height: 100%;">
+                <div class="left" style="width: 100%; height: 100%;">
+                    <h3>QUEENShop</h3>
+                    <table cellpadding="5" class="table1" style="width: 95%; height: 20%;">
+                        <tr class="tr1">
+                            <td class="td1" style="width:40vh;"><a style="text-decoration: none;" href="">Category1</a></td>
+                        </tr>
+                        <tr class="tr2">
+                            <td class="td2" style="width: 40vh"><a style="text-decoration: none;" href="">Category2</a></td>
+                        </tr>
+                        <tr class="tr3">
+                            <td class="td3" style="width: 40vh"><a style="text-decoration: none;" href="">Category3</a></td>
+                        </tr>
+        
+                    </table>
+                </div>
+               </td>
+               <td >
+                <div class="right" style="width: 100%; height: 100%;">
+                    <div class="bia" style="width: 100%; height: 30%;">
+                        <img style="width: 100%; height: 100%; float: right;" src="rau ku qua.jpg" alt="">
+                    </div>
+                    <div class="hang hoa" style="width: 100%;height: 60vh; ">
+                        
+                        <div style="width: 100%;height: 50%; display: flex;">
+                            <div style="width: 35%; height: 100%;">
+                                <div style="width: 100%; height: 100%;">
+                                    <table class="sp" style="width: 95%; height: 95%;">
+                                        <tr class="t1" style="width: 100%; height: 35%;">
+                                            <th class="anhsp">
+                                                <span style="color: rgb(14, 12, 14);">sp1</span>
+                                            </th>
+
+                                        </tr>
+                                        <tr class="t2" style="width: 95%; height: 50%;">
+                                            <td class="gia">
+                                                <div style="width: 100%; height: 100%;">
+                                                    <span style="color: blue;"> $12</span>
+                                                    <br>
+                                                    ...
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="t3" style="width: 95%; height: 15%;">
+                                            <td class="sao">
+                                                *****
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div style="width: 35%; height: 100%;">
+                                <div style="width: 100%; height: 100%;">
+                                    <table class="sp" style="width: 95%; height: 95%;" >
+                                        <tr class="t1" style="width: 100%; height: 35%;">
+                                            <th class="anhsp">
+                                                <span style="color: rgb(17, 16, 17);">sp2</span>
+                                            </th>
+
+                                        </tr>
+                                        <tr class="t2" style="width: 95%; height: 50%;">
+                                            <td class="gia">
+                                                <div style="width: 100%; height: 100%;">
+                                                    <span style="color: blue;"> $13</span>
+                                                    <br>
+                                                    ...
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="t3" style="width: 95%; height: 15%;">
+                                            <td class="sao">
+                                                *****
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div style="width: 30%; height: 100%; float:right ">
+                                <div style="width: 100%; height: 100%;">
+                                    <table class="sp" style="width: 100%; height: 95%;">
+                                        <tr class="t1" style="width: 100%; height: 35%;">
+                                            <th class="anhsp">
+                                                <span style="color: rgb(17, 16, 17);">sp3</span>
+                                            </th>
+
+                                        </tr>
+                                        <tr class="t2" style="width: 95%; height: 50%;">
+                                            <td class="gia">
+                                                <div style="width: 100%; height: 100%;">
+                                                    <span style="color: blue;"> $14</span>
+                                                    <br>
+                                                    ...
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="t3" style="width: 95%; height: 15%;">
+                                            <td class="sao">
+                                                *****
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="width: 100%; height: 50%; display: flex;">
+                        <div  style="width: 35%; height: 100%; ">
+                            <div style="width: 100%; height: 100%;">
+                                <table class="sp" style="width: 95%; height: 95%;" >
+                                    <tr class="t1" style="width: 100%; height: 35%;">
+                                        <th class="anhsp">
+                                            <span style="color: rgb(20, 19, 20);">sp4</span>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="t2" style="width: 95%; height: 50%;">
+                                        <td class="gia">
+                                            <div style="width: 100%; height: 100%;">
+                                                <span style="color: blue;"> $15</span>
+                                                <br>
+                                                ...
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="t3" style="width: 95%; height: 15%;">
+                                        <td class="sao">
+                                            *****
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div  style="width: 35%; height: 100%; ">
+                            <div style="width: 100%; height: 100%;">
+                                <table class="sp" style="width: 95%; height: 95%;">
+                                    <tr class="t1" style="width: 100%; height: 35%;">
+                                        <th class="anhsp">
+                                            <span style="color: rgb(14, 13, 14);">sp5</span> 
+                                        </th>
+
+                                    </tr>
+                                    <tr class="t2" style="width: 95%; height: 50%;">
+                                        <td class="gia">
+                                            <div style="width: 100%; height: 100%;">
+                                                <span style="color: blue;"> $16</span>
+                                                <br>
+                                                ...
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="t3" style="width: 95%; height: 15%;">
+                                        <td class="sao">
+                                            *****
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div style="width: 30%; height: 100%; float: right;">
+                            <div style="width: 100%; height: 100%;">
+                                <table class="sp" style="width: 100%; height: 95%;">
+                                    <tr class="t1" style="width: 100%; height: 35%;">
+                                        <th class="anhsp">
+                                            <span style="color: rgb(20, 19, 20);">sp7</span>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="t2" style="width: 95%; height: 50%;">
+                                        <td class="gia">
+                                            <div style="width: 100%; height: 100%;">
+                                                <span style="color: blue;"> $12</span>
+                                                <br>
+                                                ...
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="t3" style="width: 95%; height: 15%;">
+                                        <td class="sao">
+                                            *****
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </td>
+            </tr>
+        </table>
+                        
+    </div>
+    <footer>
+        <table style="width: 100%; height: 100%;">
+            <tr>
+                <th>
+                    <span style="color: #f2f2f2;" class="pfooter">Bản quyền bởi &copy; <a style="text-decoration: none; color: rgb(42, 70, 199);" href="">NenTang.vn</a> &copy; 2019</span>
+                </th>
+            </tr>
+        </table>
+          
+    </footer>
+   
 </body>
+
 </html>
