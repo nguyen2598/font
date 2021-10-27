@@ -13,7 +13,21 @@ full='mình lại làm ngiu nhé';
 alert(full);
 console.log('đây là dòng log')
 confirm('xác nhận để làm ngiu')
-prompt('xác nhận tên ngiu')
+var naame=prompt('xác nhận tên ngiu')
+if(naame=='Quyên'||naame=='Bùi Thị Hồng Quyên'||naame=='quyên') alert('ồ đúng rồi')
+else {
+    alert('sai rồi');
+    while(1){
+        naame=prompt('xác nhận lại tên ngiu');
+        if(naame=='Quyên'||naame=='Bùi Thị Hồng Quyên'||naame=='quyên')
+         {
+            alert('ồ đúng rồi');
+            break;
+        }
+        else alert('vẫn sai , đây ko phải tên ngiu mình rùi');
+    }
+} 
+
 setTimeout(function() {
 alert('cảm ơn đã làm ngiu')
 },1300)
