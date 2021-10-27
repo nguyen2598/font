@@ -16,7 +16,9 @@ confirm('xác nhận để làm ngiu')
 var naame=prompt('xác nhận tên ngiu')
 if(naame=='Quyên'||naame=='Bùi Thị Hồng Quyên'||naame=='quyên') alert('ồ đúng rồi')
 else {
-    alert('sai rồi');
+    if(naame=='yến'||naame=='đặng yến'||naame=='Đặng Thị Yến'||naame=='Yến'||naame=='Đặng Yến')alert('má đây là tên chụy nguyên ko phải ngiu nguyên')
+    else alert('mi là ai ko phải chị ta cũng ko phải ngiu ta có lẽ nào mi là ....')
+    
     while(1){
         naame=prompt('xác nhận lại tên ngiu');
         if(naame=='Quyên'||naame=='Bùi Thị Hồng Quyên'||naame=='quyên')
@@ -24,7 +26,9 @@ else {
             alert('ồ đúng rồi');
             break;
         }
-        else alert('vẫn sai , đây ko phải tên ngiu mình rùi');
+        else if(naame=='yến'||naame=='đặng yến'||naame=='Đặng Thị Yến'||naame=='Yến'||naame=='Đặng Yến')alert('má đây là tên chụy nguyên ko phải ngiu nguyên')
+
+        else alert('mi là ai ko phải chị ta cũng ko phải ngiu ta có lẽ nào mi là .... nhập lại đê')
     }
 } 
 
