@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+   <body>
+      <h2>Giải phương trình bậc 2</h2>
+      <button type="button" onclick="abc()">Nhap a, b, c</button>
+
+   </body>
+<script>
+    function abc()  {
+    var a = prompt("nhap a:");
+    var b = prompt(" nhap b:");
+    var c = prompt(" nhap c:");
+    var del=b*b-4*a*c;
+    if(del<0)alert("vô nghiệm")
+    else if(del==0){
+        alert("Nghiệm kép "+ (-b)/(2*a))
+        }
+    else{
+        alert("Nghiệm đơn: "+(Math.sqrt(del)-b)/(2*a) +" và "+(-Math.sqrt(del)-b)/(2*a))
+        
+    }
+       
+    }
+
+ </script>
+</html>
